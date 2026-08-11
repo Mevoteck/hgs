@@ -1,17 +1,17 @@
+import Image from "next/image";
 export default function Header() {
   return (
     <header className="w-full border-b border-gray-200 bg-white">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo / Nom de l'entreprise */}
         <div>
-          <h1 className="text-xl font-bold text-gray-900">
-            Hounsou Group Sarl
-          </h1>
-          <p className="text-xs text-gray-500">
-            Immobilier & investissement
-          </p>
+          <Image
+            src="/images/logo-hounsou-group.jpg"
+            alt="Logo Hounsou Group Sarl"
+            width={100}
+            height={50}
+          />
         </div>
-
         {/* Navigation */}
         <nav className="hidden items-center gap-8 md:flex">
           <a
